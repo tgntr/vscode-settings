@@ -1,0 +1,68 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-markdown-preview-enhanced.syncPreview",
+        "when": "editorLangId == 'markdown'"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-workbench.action.files.saveLocalFile",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "saveAll"
+    },
+    {
+        "key": "ctrl+k s",
+        "command": "-saveAll"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "editor.debug.action.toggleInlineBreakpoint",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+f9",
+        "command": "-editor.debug.action.toggleInlineBreakpoint",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "-editor.action.moveSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k d",
+        "command": "-workbench.files.action.compareWithSaved"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+k ctrl+d",
+        "command": "editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument.none",
+        "when": "editorTextFocus && !editorHasDocumentFormattingProvider && !editorReadonly"
+    }
+]
