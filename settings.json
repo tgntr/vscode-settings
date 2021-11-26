@@ -1,7 +1,6 @@
 {
     "breadcrumbs.enabled": false,
     "debug.showBreakpointsInOverviewRuler": true,
-    "diffEditor.codeLens": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.renderIndicators": false,
     "diffEditor.wordWrap": "on",
@@ -38,7 +37,6 @@
     "merge-conflict.autoNavigateNextConflict.enabled": true,
     "notebook.diff.enablePreview": false,
     "solidity.compileUsingRemoteVersion": "latest",
-    "terminal.integrated.fontSize": 16,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.doubleClickIconToClose": true,
     "workbench.editor.autoLockGroups": {
@@ -52,11 +50,13 @@
     "workbench.editor.limit.value": 5,
     "workbench.editor.mouseBackForwardToNavigate": false,
     "workbench.editor.openPositioning": "left",
-    "workbench.editor.pinnedTabSizing": "shrink",
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.splitSizing": "split",
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.titleScrollbarSizing": "large",
     "workbench.list.automaticKeyboardNavigation": false,
-    "explorer.autoReveal": "focusNoScroll"
+    "explorer.autoReveal": false,
+    "git.allowForcePush": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.confirmForcePush": false
   }
