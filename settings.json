@@ -1,5 +1,5 @@
 {
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "debug.javascript.suggestPrettyPrinting": false,
   "debug.showBreakpointsInOverviewRuler": true,
   "diffEditor.codeLens": true,
@@ -16,7 +16,7 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": false,
-  "editor.hover.delay": 50,
+  "editor.hover.delay": 100,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
