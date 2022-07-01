@@ -1,4 +1,13 @@
 {
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
   "breadcrumbs.enabled": true,
   "debug.javascript.suggestPrettyPrinting": false,
   "debug.showBreakpointsInOverviewRuler": true,
@@ -6,9 +15,14 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": false,
   "diffEditor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": false,
   "editor.fontSize": 16,
+  "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.gotoLocation.multipleImplementations": "gotoAndPeek",
@@ -16,7 +30,8 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": false,
-  "editor.hover.delay": 100,
+  "editor.hover.delay": 150,
+  "editor.inlayHints.fontSize": 11.5,
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.minimap.renderCharacters": false,
@@ -27,14 +42,15 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
-  "explorer.compactFolders": false,
   "files.autoSave": "onFocusChange",
   "git.allowForcePush": true,
   "git.confirmForcePush": false,
   "git.confirmSync": false,
   "git.showInlineOpenFileAction": false,
   "gitlens.codeLens.includeSingleLineSymbols": true,
-  "go.enableCodeLens": {},
+  "go.enableCodeLens": {
+    "references": true
+  },
   "go.toolsManagement.autoUpdate": true,
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
@@ -44,20 +60,28 @@
   "markdown.preview.markEditorSelection": false,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.scrollPreviewWithEditor": false,
-  "merge-conflict.autoNavigateNextConflict.enabled": true,
-  "notebook.diff.enablePreview": false,
+  "notebook.lineNumbers": "on",
   "references.preferredLocation": "view",
-  "rust.all_features": true,
+  "rust-analyzer.debug.openDebugPane": true,
+  "rust-analyzer.hover.actions.references.enable": true,
+  "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
+  "rust-analyzer.inlayHints.reborrowHints.enable": "always",
   "solidity.compileUsingRemoteVersion": "latest",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.packageDefaultDependenciesDirectory": "node_modules",
   "terminal.explorerKind": "external",
-  "terminal.external.windowsExec": "C:\\Users\\bootz\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\wt.exe",
   "terminal.integrated.fontSize": 16,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
+  "workbench.colorCustomizations": {
+    "[Oceanic Next]": {
+      "editorInlayHint.background": "#968a605d",
+      "editorInlayHint.foreground": "#b4b2b2"
+    }
+  },
   "workbench.colorTheme": "Oceanic Next",
   "workbench.editor.enablePreviewFromCodeNavigation": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -66,12 +90,10 @@
   "workbench.editor.limit.value": 5,
   "workbench.editor.mouseBackForwardToNavigate": false,
   "workbench.editor.openPositioning": "last",
-  "workbench.editor.revealIfOpen": true,
-  "workbench.editor.splitSizing": "split",
   "workbench.editor.tabSizing": "shrink",
-  "workbench.editor.titleScrollbarSizing": "large",
   "workbench.editorAssociations": {
-      "*.md": "vscode.markdown.preview.editor"
+    "*.md": "vscode.markdown.preview.editor",
+    "*.wasm": "default"
   },
-  "workbench.list.automaticKeyboardNavigation": false
+  "workbench.list.keyboardNavigation": "filter"
 }
