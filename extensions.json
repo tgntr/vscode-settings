@@ -610,15 +610,6 @@
 	},
 	{
 		"identifier": {
-			"id": "bajdzis.vscode-database",
-			"uuid": "70a45fa6-2772-42a0-91b0-515caafa49b5"
-		},
-		"preRelease": false,
-		"version": "2.2.3",
-		"installed": true
-	},
-	{
-		"identifier": {
 			"id": "christian-kohler.path-intellisense",
 			"uuid": "a41c1549-4053-44d4-bf30-60fc809b4a86"
 		},
@@ -966,6 +957,24 @@
 		},
 		"preRelease": false,
 		"version": "0.0.18"
+	},
+	{
+		"identifier": {
+			"id": "mtxr.sqltools",
+			"uuid": "6a2bbab0-d8f0-43fa-9b26-e6a3b7892a0b"
+		},
+		"preRelease": false,
+		"version": "0.23.0",
+		"installed": true
+	},
+	{
+		"identifier": {
+			"id": "mtxr.sqltools-driver-pg",
+			"uuid": "ff850146-c38e-4afe-8a34-705074ae16e2"
+		},
+		"preRelease": false,
+		"version": "0.2.0",
+		"installed": true
 	},
 	{
 		"identifier": {
