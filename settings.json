@@ -3,13 +3,18 @@
     "editor.defaultFormatter": "golang.go"
   },
   "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "breadcrumbs.enabled": true,
-  "debug.javascript.suggestPrettyPrinting": false,
   "debug.showBreakpointsInOverviewRuler": true,
   "diffEditor.codeLens": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -18,10 +23,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.find.addExtraSpaceOnTop": false,
   "editor.folding": false,
   "editor.fontSize": 16,
+  "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.gotoLocation.multipleDeclarations": "goto",
   "editor.gotoLocation.multipleDefinitions": "goto",
@@ -30,6 +35,7 @@
   "editor.gotoLocation.multipleTypeDefinitions": "goto",
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": false,
+  "editor.hover.above": false,
   "editor.hover.delay": 150,
   "editor.inlayHints.fontSize": 11.5,
   "editor.linkedEditing": true,
@@ -40,17 +46,27 @@
   "editor.rename.enablePreview": false,
   "editor.renderFinalNewline": false,
   "editor.renderWhitespace": "all",
+  "editor.rulers": [90],
   "editor.suggestSelection": "first",
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.wordWrap": "on",
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 15000,
   "git.allowForcePush": true,
   "git.confirmForcePush": false,
   "git.confirmSync": false,
   "git.showInlineOpenFileAction": false,
+  "githubPullRequests.pullBranch": "never",
   "gitlens.codeLens.includeSingleLineSymbols": true,
-  "go.enableCodeLens": {
-    "references": true
+  "go.coverOnSingleTest": true,
+  "go.coverageDecorator": {
+    "type": "highlight",
+    "coveredHighlightColor": "rgba(64,128,128,0.5)",
+    "uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+    "coveredGutterStyle": "blockgreen",
+    "uncoveredGutterStyle": "blockred"
   },
+  "go.enableCodeLens": {},
   "go.toolsManagement.autoUpdate": true,
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
@@ -60,9 +76,16 @@
   "markdown.preview.markEditorSelection": false,
   "markdown.preview.scrollEditorWithPreview": false,
   "markdown.preview.scrollPreviewWithEditor": false,
-  "notebook.lineNumbers": "on",
+  "prettier.configPath": ".prettierrc.json",
+  "prettier.printWidth": 90,
+  "prettier.quoteProps": "consistent",
+  "prettier.tabWidth": 4,
   "references.preferredLocation": "view",
   "rust-analyzer.debug.openDebugPane": true,
+  "rust-analyzer.diagnostics.disabled": [
+    "macro-error",
+    "unresolved-proc-macro"
+  ],
   "rust-analyzer.hover.actions.references.enable": true,
   "rust-analyzer.inlayHints.closureReturnTypeHints.enable": "always",
   "rust-analyzer.inlayHints.reborrowHints.enable": "always",
@@ -71,15 +94,21 @@
   "solidity.packageDefaultDependenciesDirectory": "node_modules",
   "terminal.explorerKind": "external",
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.scrollback": 500000,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescriptHero.imports.disableImportsSorting": true,
+  "typescriptHero.imports.multiLineWrapThreshold": 90,
+  "typescriptHero.imports.stringQuoteStyle": "\"",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.title": "${rootName}",
+  "window.zoomLevel": -1,
   "workbench.colorCustomizations": {
     "[Oceanic Next]": {
-      "editorInlayHint.background": "#968a605d",
-      "editorInlayHint.foreground": "#b4b2b2"
+      "editorInlayHint.foreground": "#b4b2b2",
+      "editorInlayHint.background": "#968a605d"
     }
   },
   "workbench.colorTheme": "Oceanic Next",
@@ -90,10 +119,12 @@
   "workbench.editor.limit.value": 5,
   "workbench.editor.mouseBackForwardToNavigate": false,
   "workbench.editor.openPositioning": "last",
+  "workbench.editor.revealIfOpen": true,
+  "workbench.editor.splitSizing": "split",
   "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.titleScrollbarSizing": "large",
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor",
     "*.wasm": "default"
   },
-  "workbench.list.keyboardNavigation": "filter"
+  "workbench.list.defaultFindMode": "filter"
 }
